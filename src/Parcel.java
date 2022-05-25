@@ -2,24 +2,24 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Label;
 
-public class Parcela extends Label{
+public class Parcel extends Label{
 	
-	private char oznaka;
+	private char label;
 	private Color color;
 	
-	public Parcela(char o, Color c) {
-		this.oznaka = o;
+	public Parcel(char o, Color c) {
+		this.label = o;
 		this.color = c;
 		setForeground(Color.WHITE);
 		setBackground(this.color);
 		setFont(new Font("Serif", Font.BOLD, 14));
 		setAlignment(CENTER);
-		setText(""+o);
+		setText(""+this.label);
 		
 		validate();
 	}
 	
-	public void promeniBoju(Color c) {
+	public void changeColor(Color c) {
 		this.color = c;
 		revalidate();
 	}

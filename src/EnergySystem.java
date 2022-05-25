@@ -5,17 +5,17 @@ import java.awt.Panel;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class EnergetskiSistem extends Frame{
+public class EnergySystem extends Frame{
 	
 	private int column, row;
-	private Plac plac;
+	private Lot plac;
 	private Button button = new Button("Dodaj");
 	private Panel buttonPanel = new Panel();
 	
-	public EnergetskiSistem(int c, int r){
+	public EnergySystem(int c, int r){
 		this.column = c;
 		this.row = r;
-		plac = new Plac(c, r);
+		plac = new Lot(c, r);
 		
 		
 		setBounds(700, 200, 500, 500);
@@ -35,6 +35,6 @@ public class EnergetskiSistem extends Frame{
 	}
 	
 	public static void main(String [] args) {
-		new EnergetskiSistem(5,5);
+		new EnergySystem(5,5);
 	}
 }

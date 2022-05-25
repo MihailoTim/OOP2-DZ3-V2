@@ -1,8 +1,8 @@
 import java.awt.Color;
 
-public class Voda extends Parcela {
+public class Water extends Parcel {
 
-	public Voda() {
+	public Water() {
 		super('~', Color.CYAN);
 	}
 }

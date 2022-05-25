@@ -1,8 +1,8 @@
 import java.awt.Color;
 
-public class Trava extends Parcela{
+public class Grass extends Parcel{
 
-	public Trava() {
+	public Grass() {
 		super('"', Color.GREEN);
 		// TODO Auto-generated constructor stub
 	}

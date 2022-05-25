@@ -29,6 +29,10 @@ public class EnergySystem extends Frame{
 			}
 		});
 		
+		button.addActionListener((ae) -> {
+			lot.addProducer();
+		});
+		
 		buttonPanel.add(button);
 		add(buttonPanel, BorderLayout.NORTH);
 		add(lot);

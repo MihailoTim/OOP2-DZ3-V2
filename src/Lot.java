@@ -46,4 +46,24 @@ public class Lot extends Panel{
 		
 		add(parcels[c*r-1]);
 	}
+	
+	public void addProducer() {
+		int i;
+//		for(i=0;i<column*row;i++)
+//			if(parcels[i] == selected) {
+//				parcels[i] = null;
+//			}
+//		
+		int tmp = 3;
+		
+		for(i =0;i<column*row;i++)
+		{
+			remove(parcels[i]);
+			if(i==tmp) {
+				parcels[i] = new Hydroplant('H', Color.BLUE, 1500, null);
+			}		
+			add(parcels[i]);
+		}
+		revalidate();
+	}
 }

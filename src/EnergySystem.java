@@ -8,14 +8,14 @@ import java.awt.event.WindowEvent;
 public class EnergySystem extends Frame{
 	
 	private int column, row;
-	private Lot plac;
+	private Lot lot;
 	private Button button = new Button("Dodaj");
 	private Panel buttonPanel = new Panel();
 	
 	public EnergySystem(int c, int r){
 		this.column = c;
 		this.row = r;
-		plac = new Lot(c, r);
+		lot = new Lot(c, r);
 		
 		
 		setBounds(700, 200, 500, 500);
@@ -28,9 +28,10 @@ public class EnergySystem extends Frame{
 				dispose();
 			}
 		});
+		
 		buttonPanel.add(button);
 		add(buttonPanel, BorderLayout.NORTH);
-		add(plac);
+		add(lot);
 		
 	}
 	

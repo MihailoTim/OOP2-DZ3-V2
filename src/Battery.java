@@ -12,7 +12,7 @@ public class Battery {
 		currEnergy = Math.min(currEnergy, cap);
 	}
 	
-	public void isprazni() {
+	public void drain() {
 		currEnergy = 0;
 	}
 	

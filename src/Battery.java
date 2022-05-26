@@ -5,18 +5,23 @@ public class Battery {
 	
 	public Battery(int cap) {
 		this.currEnergy = this.cap = cap;
+		this.currEnergy = 0;
 	}
 	
-	public void dodaj(int delta) {
+	public synchronized void add(int delta) {
 		currEnergy+=delta;
 		currEnergy = Math.min(currEnergy, cap);
 	}
 	
-	public void drain() {
+	public synchronized void drain() {
 		currEnergy = 0;
 	}
 	
 	public boolean isFull() {
 		return currEnergy == cap;
+	}
+	
+	public int getBattery() {
+		return currEnergy;
 	}
 }
